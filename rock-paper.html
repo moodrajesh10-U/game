@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #4ad1e3;
+            color: #000000;
+        }
+        
+        h1 {
+            margin-top: 20px;
+        }
+        
+        .choices {
+            margin: 20px;
+        }
+        
+        button {
+            font-size: 40px;
+            margin: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 10px;
+            border: none;
+            background: #dcdde1;
+            transition: 0.2s;
+        }
+        
+        button:hover {
+            background: #718093;
+            color: rgba(195, 15, 15, 0.498);
+        }
+        
+        .result {
+            font-size: 22px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        
+        .score {
+            margin-top: 15px;
+            font-size: 18px;
+        }
+        
+        .hands {
+            margin: 20px;
+            font-size: 80px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>PLAY THE GAME,HAVE FUN</h1>
+
+    <div class="choices">
+        <button onclick="play('rock')">✊</button>
+        <button onclick="play('paper')">✋</button>
+        <button onclick="play('scissors')">✌️</button>
+    </div>
+
+    <div class="hands">
+        <span id="player-hand">❓</span> VS <span id="computer-hand">❓</span>
+    </div>
+
+    <div class="result" id="result">Make your move!</div>
+    <div class="score" id="score">Player: 0 | Computer: 0</div>
+    <script src="rock-paper.js"></script>
+</body>
+
+</html>
